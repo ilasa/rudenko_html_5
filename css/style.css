@@ -1,0 +1,239 @@
+.ul-wrapper {
+    height: 36px;
+    background-image: url('../img/nav_bg.jpg');
+    overflow: hidden;
+}
+
+.menu {
+    height: 36px;
+    background-image: url('../img/nav_bg.jpg');
+    float: right;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 30px;
+    color:  #60b5ed;
+    font-size: 14px;;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.menu .vendor {
+    background-color: #4eabda;
+    border: 1px solid #4eabda;
+    color: #fff;
+}
+
+.menu .ofertas {
+    color: #fff;
+    border-left: 1px solid #60b5ed;
+}
+
+.menu .ofertas:before {
+    content: url('../img/flag_menu.png');
+    position: absolute;
+    left: 4px;
+    top: 6px;
+}
+
+.menu li:last-child {
+    margin-right: 20px;
+}
+
+.menu li a:focus {
+    color: #fff;
+    background-image: linear-gradient(#4eacda,#2e7ac4);
+    border: 1px solid #60b5ed;
+}
+
+.flex-container {
+    height: 1026px;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    font-size: 14px;
+    color: #cccccc;
+    vertical-align: center;
+    text-align: center;
+}
+
+.header-wrapper,
+.form-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-wrapper {
+    font-size: 24px;
+    color: #fffbfb;
+    margin-bottom: 2px;
+}
+
+.header-wrapper,
+.footer-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-column {
+    width: 260px;
+    overflow: hidden;
+    padding: 0 120px;
+}
+
+form input {
+    width: 250px;
+    height: 25px;
+    margin-top: 18px;
+    padding-left: 7px;
+    background-color: #0f0f0f;
+    border: 2px solid #0f0f0f;
+    border-bottom: 2px solid #999999;
+}
+
+form .first {
+    margin-top: 0;
+}
+
+.link-fb {
+    width: 256px;
+    height: 32px;
+    background-color: #344c8c;
+    border: 2px solid #2d4176;
+    border-top: 2px solid #758ab9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.link-fb,
+.ou-line {
+    display: block;
+    margin: 30px 0;
+}
+
+.link-fb a {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #fafaff;
+    text-decoration: none;
+    position: relative;
+}
+
+.link-fb a:before {
+    content: '\66';
+    position: absolute;
+    left: -45px;
+    right: 100%;
+    top: -5px;
+    background: url('../img/b-left.png') 40px 1px repeat-y, url('../img/b-right.png') 41px 1px repeat-y;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.link-fb a:after {
+    content: '\203a';
+    position: absolute;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.select {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.ou-line {
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    color: #999999;
+}
+.ou-line:before,
+.ou-line:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #0f0f0f;
+    position: relative;
+  }
+.ou-line:before {
+    margin-left: -100%;
+    left: -7px;
+}
+
+.ou-line:after {
+    margin-right: -100%;
+    right: -7px;
+}
+
+form .shadow:focus {
+    background-color: #1b5288;
+    border: 2px solid #1b5288;
+    border-bottom: 2px solid #4499d1;
+    -moz-box-shadow: 0px 0px 8px 3px rgba(88,167,240,1);
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(88,167,240,1);
+    box-shadow: 0px 0px 8px 3px rgba(88,167,240,1);
+}
+
+:focus::-webkit-input-placeholder {
+    color: #fffbfb;
+}
+
+:focus:-moz-placeholder { /* Firefox 18- */
+    color: #fffbfb;
+}
+
+:focus::-moz-placeholder {  /* Firefox 19+ */
+    color: #fffbfb;
+}
+
+:focus:-ms-input-placeholder {
+    color: #fffbfb;
+}
+
+form .check input[type=checkbox] {
+    width: inherit;
+    height: inherit;
+    margin-left: 0;
+    background-image: url('../img/checkbox.png');
+}
+
+.check {
+    text-align: left;
+}
+
+.submit {
+    text-align: center;
+}
+
+form input[type=submit] {
+    height: 35px;
+    color: #ffffff;
+    background-image: linear-gradient(#50aedb,#2e7ac4);
+    border-color: #6bb8e7 #59a3de #2e7ac4;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.footer-wrapper p {
+    font-size: 11px;
+    line-height: 13px;
+}

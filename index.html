@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cadastre</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header>
+        <nav class="ul-wrapper">
+            <ul class="menu">
+                <li><a href="#">Mau YouBike</a></li>
+                <li><a class="vendor" href="#">Vender</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a class="ofertas" href="#">Minhas Ofertas</a></li>
+                <li><a href="#">Ola! Entrar ou Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex-container">
+
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <h1>Cadastre-se</h1>
+            </div>
+            <div class="form-wrapper">
+                <form class="form-column" action="#" method="post">
+                    <div>
+                        <button class="link-fb"><a href="https://facebook.com"><span class="select">Log In</span> with
+                            <span
+                                    class="select">Facebook</span></a></button>
+                    </div>
+
+                    <div>
+                        <h2 class="ou-line">OU</h2>
+                    </div>
+
+                    <div>
+                        <input class="first shadow" type="text" name="first-name" id="first-name"
+                               placeholder="First Name"
+                               required>
+                    </div>
+
+                    <div>
+                        <input class="shadow" type="text" name="last-name" id="last-name" placeholder="Last Name"
+                               required>
+                    </div>
+
+                    <div>
+                        <input class="shadow" type="email" name="email" placeholder="Email Adress" required>
+                    </div>
+
+                    <div>
+                        <input class="shadow" type="password" name="password" placeholder="Choose Password"
+                               maxlength="8"
+                               required>
+                    </div>
+
+                    <div>
+                        <input class="shadow" type="password" name="password" placeholder="Password Confirm" required>
+                    </div>
+                    <div class="check">
+                        <label>
+                            <input type="checkbox">
+                            Send me Youbike updates and tips
+                        </label>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Create my Account">
+                    </div>
+                </form>
+
+                <div class="footer-wrapper">
+                    <p>By cicking the buttonaboe,you agree to the Terms of Service</p>
+                    <p>Xiew our Privacy Policy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
