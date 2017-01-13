@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, span {
+    font-family: 'Helvetica Neue Regular';
+}
+
 .ul-wrapper {
     height: 36px;
     background-image: url('../img/nav_bg.jpg');
@@ -28,7 +43,7 @@
 
 .menu .vendor {
     background-color: #4eabda;
-    border: 1px solid #4eabda;
+    border: 1px solid transparent;
     color: #fff;
 }
 
@@ -45,7 +60,12 @@
 }
 
 .menu li:last-child {
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+.menu li span {
+    text-decoration: underline;
+    text-decoration-color: #9ac1e4;
 }
 
 .menu li a:focus {
@@ -56,9 +76,8 @@
 
 .flex-container {
     height: 1026px;
-    background-image: url('../img/bg.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
     margin-top: -1px;
     display: flex;
     justify-content: center;
@@ -102,7 +121,7 @@ form input {
     padding-left: 7px;
     outline: none;
     background-color: #0f0f0f;
-    border: 1px solid #0f0f0f;
+    border: 1px solid transparent;
     border-bottom: 1px solid #999999;
 
 }
@@ -121,13 +140,31 @@ form .first {
     overflow: hidden;
 }
 
+.link-fb .f {
+    width: 40px;
+    float: left;
+    height: 100%;
+    border-right: 2px solid #203a75;
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.link-fb button{
+    width: 213px;
+    height: 100%;
+    border: none;
+    background: #344c8c;
+    border-left: 2px solid #4c65a5;
+}
+
 .link-fb,
 .ou-line {
     display: block;
     margin: 30px 0;
 }
 
-.link-fb a {
+.link-fb button {
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -136,18 +173,7 @@ form .first {
     position: relative;
 }
 
-.link-fb a:before {
-    content: '\66';
-    position: absolute;
-    left: -45px;
-    right: 100%;
-    top: -5px;
-    background: url('../img/b-left.png') 40px 1px repeat-y, url('../img/b-right.png') 41px 1px repeat-y;
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.link-fb a:after {
+.link-fb button:after {
     content: '\203a';
     position: absolute;
     margin-left: 10px;
@@ -187,7 +213,7 @@ form .first {
 
 form .shadow:focus {
     background-color: #1b5288;
-    border: 1px solid #1b5288;
+    border: 1px solid transparent;
     border-bottom: 1px solid #4499d1;
     -moz-box-shadow: 0px 0px 8px 3px rgba(88,167,240,1);
     -webkit-box-shadow: 0px 0px 8px 3px rgba(88,167,240,1);
